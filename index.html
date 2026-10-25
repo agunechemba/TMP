@@ -1,0 +1,1581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Magic of Programming: A Storybook for Young Coders</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ============================================================ -->
+  <!-- BOOK COVER                                                  -->
+  <!-- ============================================================ -->
+  <header id="book-cover" class="book-page cover-page">
+    <div class="cover-content">
+      <p class="cover-series">A Storybook for Young Coders</p>
+      <h1 class="cover-title">The Magic of Programming</h1>
+      <p class="cover-subtitle">How to Talk to Computers and Make Them Do Amazing Things</p>
+      <p class="cover-author">A gentle adventure for ages 5&ndash;11</p>
+      <p class="cover-note">Based on the ideas in <em>Beginning Programming For Dummies, 4th Edition</em> by Wallace Wang</p>
+    </div>
+    <nav class="book-nav cover-nav" aria-label="Book navigation">
+      <a href="#toc" class="nav-button">Open the Book</a>
+    </nav>
+  </header>
+
+  <!-- ============================================================ -->
+  <!-- TABLE OF CONTENTS                                           -->
+  <!-- ============================================================ -->
+  <nav id="toc" class="book-page toc-page" aria-label="Table of Contents">
+    <header class="chapter-header">
+      <h2>Table of Contents</h2>
+      <p class="chapter-tagline">Where would you like to go?</p>
+    </header>
+
+    <section class="toc-part">
+      <h3>Part One: The Big Ideas</h3>
+      <ol>
+        <li><a href="#chapter-1">Chapter 1: The Magic of Telling Computers What to Do</a></li>
+        <li><a href="#chapter-2">Chapter 2: Why Are There So Many Computer Languages?</a></li>
+        <li><a href="#chapter-3">Chapter 3: How to Plan a Program</a></li>
+        <li><a href="#chapter-4">Chapter 4: The Programmer&rsquo;s Toolbox</a></li>
+      </ol>
+    </section>
+
+    <section class="toc-part">
+      <h3>Part Two: The Building Blocks</h3>
+      <ol start="5">
+        <li><a href="#chapter-5">Chapter 5: Getting Started with Code</a></li>
+        <li><a href="#chapter-6">Chapter 6: How a Program Is Built</a></li>
+        <li><a href="#chapter-7">Chapter 7: Boxes, Labels, and Notes</a></li>
+        <li><a href="#chapter-8">Chapter 8: Numbers and Words</a></li>
+        <li><a href="#chapter-9">Chapter 9: Making Choices</a></li>
+        <li><a href="#chapter-10">Chapter 10: Repeating Things Over and Over</a></li>
+        <li><a href="#chapter-11">Chapter 11: Little Programs Inside Big Programs</a></li>
+        <li><a href="#chapter-12">Chapter 12: Rows of Boxes</a></li>
+        <li><a href="#chapter-13">Chapter 13: Building with Objects</a></li>
+      </ol>
+    </section>
+
+    <section class="toc-part">
+      <h3>Part Three: Advanced Magic</h3>
+      <ol start="14">
+        <li><a href="#chapter-14">Chapter 14: Sorting and Searching</a></li>
+        <li><a href="#chapter-15">Chapter 15: Finding and Fixing Bugs</a></li>
+        <li><a href="#chapter-16">Chapter 16: Making Programs Faster and Better</a></li>
+        <li><a href="#chapter-17">Chapter 17: Making Programs Easy to Use</a></li>
+      </ol>
+    </section>
+
+    <section class="toc-part">
+      <h3>Part Four: The Internet</h3>
+      <ol start="18">
+        <li><a href="#chapter-18">Chapter 18: Building Web Pages with HTML</a></li>
+        <li><a href="#chapter-19">Chapter 19: Making Web Pages Come Alive with JavaScript</a></li>
+        <li><a href="#chapter-20">Chapter 20: Java Applets &mdash; Mini Programs for the Web</a></li>
+      </ol>
+    </section>
+
+    <section class="toc-part">
+      <h3>Part Five: The Part of Tens</h3>
+      <ol start="21">
+        <li><a href="#chapter-21">Chapter 21: Ten More Places to Learn and Play</a></li>
+        <li><a href="#chapter-22">Chapter 22: Ten Cool Jobs for People Who Love Code</a></li>
+      </ol>
+    </section>
+
+    <nav class="book-nav" aria-label="Book navigation">
+      <a href="#book-cover" class="nav-button">Back to Cover</a>
+    </nav>
+  </nav>
+
+  <!-- ============================================================ -->
+  <!-- PART ONE                                                    -->
+  <!-- ============================================================ -->
+
+  <!-- CHAPTER 1 -->
+  <article id="chapter-1" class="book-page chapter-page">
+    <header class="chapter-header">
+      <p class="chapter-part">Part One: The Big Ideas</p>
+      <h2>Chapter 1: The Magic of Telling Computers What to Do</h2>
+      <p class="chapter-tagline">Once upon a time, there was a machine that knew nothing at all&hellip;</p>
+    </header>
+
+    <section class="chapter-story">
+      <p>Imagine you have a very large, very fast, very strong robot friend. It can do almost anything &mdash; but it knows <em>nothing</em> unless you tell it.</p>
+      <p>&ldquo;Please make me a sandwich,&rdquo; you say.</p>
+      <p>The robot stands still. It doesn&rsquo;t know what a sandwich is. It doesn&rsquo;t know what bread is. It doesn&rsquo;t even know where the kitchen is.</p>
+      <p>So you have to say: &ldquo;Walk to the kitchen. Open the drawer. Pick up the knife. Open the bread box&hellip;&rdquo;</p>
+      <p>That is what programming is: giving a computer <strong>exact, step-by-step instructions</strong> so it can do something useful.</p>
+    </section>
+
+    <section class="chapter-ideas">
+      <h3>The Big Ideas in This Chapter</h3>
+      <ul>
+        <li><strong>Computers are not smart.</strong> They only do what we tell them. They are like a super-fast helper who needs every detail explained.</li>
+        <li><strong>Programming is problem-solving.</strong> Big problems are made of little problems. If you can solve the little ones, you can solve the big one.</li>
+        <li><strong>You don&rsquo;t need to be a genius.</strong> You need patience, curiosity, and imagination &mdash; three things every kid already has.</li>
+      </ul>
+    </section>
+
+    <section class="chapter-story">
+      <h3>A True Story: The Robot That Almost Got It Right</h3>
+      <p>Long ago, a team built a robot cannon called Sergeant York. It was supposed to find enemy airplanes and shoot them down. But during a big demonstration, the robot got confused and pointed its cannons at the <em>audience</em> instead! Everyone ran for their lives.</p>
+      <p>The lesson? If instructions are even a little bit wrong, a computer can do something very wrong &mdash; very fast.</p>
+    </section>
+
+    <section class="chapter-questions">
+      <h3>Think About It</h3>
+      <ol>
+        <li>What is something you do every day that a computer could help with?</li>
+        <li>If you had a robot helper, what would you teach it to do first?</li>
+        <li>What kind of instructions do you think a robot would need to make a peanut butter sandwich?</li>
+      </ol>
+    </section>
+
+    <nav class="book-nav" aria-label="Chapter navigation">
+      <a href="#toc" class="nav-button">Table of Contents</a>
+      <a href="#chapter-2" class="nav-button">Next Chapter &rarr;</a>
+    </nav>
+  </article>
+
+  <!-- CHAPTER 2 -->
+  <article id="chapter-2" class="book-page chapter-page">
+    <header class="chapter-header">
+      <p class="chapter-part">Part One: The Big Ideas</p>
+      <h2>Chapter 2: Why Are There So Many Computer Languages?</h2>
+      <p class="chapter-tagline">Why can&rsquo;t computers just speak English?</p>
+    </header>
+
+    <section class="chapter-story">
+      <p>A long time ago, computers only understood one language: <strong>machine language</strong>. It is made of only two numbers: 0 and 1.</p>
+      <p>A program in machine language looks like this:</p>
+      <pre class="code-example">0010 1010 0001 1101
+0011 1100 1010 1111</pre>
+      <p>Can you read that? No? Neither could most people! So programmers invented <strong>assembly language</strong>, which uses short words like <code>JMP</code>, <code>MOV</code>, and <code>ADD</code> instead of numbers.</p>
+      <p>But assembly language was still hard. So people invented <strong>high-level languages</strong> that look more like human language. One of the first was <strong>BASIC</strong>, which stands for <em>Beginner&rsquo;s All-purpose Symbolic Instruction Code</em>.</p>
+    </section>
+
+    <section class="chapter-ideas">
+      <h3>Why So Many Languages?</h3>
+      <p>Different languages are good at different things:</p>
+      <ul>
+        <li><strong>BASIC</strong> is simple and friendly. It was made for beginners.</li>
+        <li><strong>C and C++</strong> are powerful. Many big programs like Windows and Photoshop are written in C++.</li>
+        <li><strong>Java</strong> can run on almost any computer. It uses something called byte code.</li>
+        <li><strong>JavaScript</strong> makes web pages interactive.</li>
+        <li><strong>Python</strong> is friendly and popular for science and games.</li>
+        <li><strong>SQL</strong> is for talking to databases &mdash; giant lists of information.</li>
+        <li><strong>HTML</strong> is the language of web pages.</li>
+        <li><strong>Revolution</strong> uses English-like sentences, so it is easy to read.</li>
+      </ul>
+    </section>
+
+    <section class="chapter-story">
+      <h3>The &ldquo;Best&rdquo; Language?</h3>
+      <p>Here is a secret: there is no single best language. It&rsquo;s like asking, &ldquo;What is the best tool &mdash; a hammer or a screwdriver?&rdquo; It depends on what you are building.</p>
+      <p>A great BASIC programmer will always be more productive than a grumpy C++ programmer who has no ideas.</p>
+    </section>
+
+    <section class="chapter-questions">
+      <h3>Think About It</h3>
+      <ol>
+        <li>What would be a good language for making a web page?</li>
+        <li>What would be a good language for making a fast video game?</li>
+        <li>Why do you think programmers invented so many languages?</li>
+      </ol>
+    </section>
+
+    <nav class="book-nav" aria-label="Chapter navigation">
+      <a href="#toc" class="nav-button">Table of Contents</a>
+      <a href="#chapter-3" class="nav-button">Next Chapter &rarr;</a>
+    </nav>
+  </article>
+
+  <!-- CHAPTER 3 -->
+  <article id="chapter-3" class="book-page chapter-page">
+    <header class="chapter-header">
+      <p class="chapter-part">Part One: The Big Ideas</p>
+      <h2>Chapter 3: How to Plan a Program</h2>
+      <p class="chapter-tagline">Building a program is like baking a cake &mdash; you need a recipe first!</p>
+    </header>
+
+    <section class="chapter-story">
+      <p>Imagine trying to bake a cake by throwing all the ingredients into a bowl at the same time without a recipe. Flour everywhere! Eggs on the floor! A mess!</p>
+      <p>That&rsquo;s what happens if you write a program without planning. So before you write any code, you need to think about four things:</p>
+    </section>
+
+    <section class="chapter-ideas">
+      <h3>The Four Big Questions</h3>
+      <ol>
+        <li><strong>What problem does my program solve?</strong> If you can&rsquo;t say it clearly, you can&rsquo;t build it.</li>
+        <li><strong>Who is going to use it?</strong> A game for kids is different from a tool for doctors.</li>
+        <li><strong>What kind of computer will it run on?</strong> A Windows laptop? A Mac? A phone? A robot?</li>
+        <li><strong>Who is going to write it?</strong> Just you? Or a whole team?</li>
+      </ol>
+    </section>
+
+    <section class="chapter-story">
+      <h3>Make a Prototype First</h3>
+      <p>A <strong>prototype</strong> is a pretend version of your program. It might show the buttons and menus, but clicking them doesn&rsquo;t do anything yet.</p>
+      <p>Architects build little models out of cardboard before they build a real skyscraper. Programmers build prototypes before they write real code.</p>
+      <p>Once you are happy with the prototype, you can start writing the real program.</p>
+    </section>
+
+    <section class="chapter-ideas">
+      <h3>Pseudocode: Writing Instructions in Plain English</h3>
+      <p>Before you write real code, you can write <strong>pseudocode</strong> &mdash; instructions in plain English that anyone can understand.</p>
+      <p>For example, here is pseudocode for a program that asks for your name and says hello:</p>
+      <pre class="code-example">1. Ask the user for their name.
+2. Store the name in memory.
+3. Print "Hello, [name]!" on the screen.
+4. End the program.</pre>
+    </section>
+
+    <section class="chapter-questions">
+      <h3>Think About It</h3>
+      <ol>
+        <li>What problem would you like a program to solve for you?</li>
+        <li>Who would use your program?</li>
+        <li>Can you write pseudocode for a program that adds two numbers together?</li>
+      </ol>
+    </section>
+
+    <nav class="book-nav" aria-label="Chapter navigation">
+      <a href="#toc" class="nav-button">Table of Contents</a>
+      <a href="#chapter-4" class="nav-button">Next Chapter &rarr;</a>
+    </nav>
+  </article>
+
+  <!-- CHAPTER 4 -->
+  <article id="chapter-4" class="book-page chapter-page">
+    <header class="chapter-header">
+      <p class="chapter-part">Part One: The Big Ideas</p>
+      <h2>Chapter 4: The Programmer&rsquo;s Toolbox</h2>
+      <p class="chapter-tagline">Every wizard needs a wand, a cauldron, and a spellbook.</p>
+    </header>
+
+    <section class="chapter-story">
+      <p>A programmer needs tools, just like a carpenter needs a hammer and saw. Here are the most important ones:</p>
+    </section>
+
+    <section class="chapter-ideas">
+      <h3>The Tools</h3>
+      <ul>
+        <li><strong>Editor:</strong> A special text editor where you type your code. It is like a word processor, but it saves plain text files.</li>
+        <li><strong>Compiler:</strong> A program that translates your code into machine language (0s and 1s) all at once, creating an executable file.</li>
+        <li><strong>Interpreter:</strong> A program that translates your code one line at a time as it runs. It doesn&rsquo;t create a separate file.</li>
+        <li><strong>Debugger:</strong> A tool that helps you find bugs (mistakes) in your program. It can run your code line by line and show you what is happening.</li>
+        <li><strong>Help File Creator:</strong> A tool for writing on-screen help so users can figure out how to use your program.</li>
+        <li><strong>Installation Program:</strong> A tool that copies your program onto someone else&rsquo;s computer.</li>
+      </ul>
+    </section>
+
+    <section class="chapter-story">
+      <h3>What Is a Bug?</h3>
+      <p>A <strong>bug</strong> is a mistake in a program. The word comes from a real story: long ago, a moth got stuck inside a computer and stopped it from working. The scientists found it and said, &ldquo;There&rsquo;s a bug in the computer!&rdquo;</p>
+      <p>Today, bugs are mistakes in code. They can be tiny (a misspelled word) or huge (the program does the wrong thing completely).</p>
+      <p>A <strong>debugger</strong> helps you hunt bugs. It can:</p>
+      <ul>
+        <li><strong>Step</strong> through your program one line at a time.</li>
+        <li><strong>Set breakpoints</strong> so the program stops at a certain line.</li>
+        <li><strong>Watch</strong> variables to see when their values change.</li>
+      </ul>
+    </section>
+
+    <section class="chapter-questions">
+      <h3>Think About It</h3>
+      <ol>
+        <li>What is the difference between a compiler and an interpreter?</li>
+        <li>Why is it impossible to write a program with zero bugs?</li>
+        <li>If you were a bug hunter, what tool would you use first?</li>
+      </ol>
+    </section>
+
+    <nav class="book-nav" aria-label="Chapter navigation">
+      <a href="#toc" class="nav-button">Table of Contents</a>
+      <a href="#chapter-5" class="nav-button">Next Chapter &rarr;</a>
+    </nav>
+  </article>
+
+  <!-- ============================================================ -->
+  <!-- PART TWO                                                    -->
+  <!-- ============================================================ -->
+
+  <!-- CHAPTER 5 -->
+  <article id="chapter-5" class="book-page chapter-page">
+    <header class="chapter-header">
+      <p class="chapter-part">Part Two: The Building Blocks</p>
+      <h2>Chapter 5: Getting Started with Code</h2>
+      <p class="chapter-tagline">Let&rsquo;s make the computer say something!</p>
+    </header>
+
+    <section class="chapter-story">
+      <p>The best way to learn programming is to <strong>start writing programs</strong>. In this chapter, we&rsquo;ll look at the same tiny program in three different languages. The program just prints: <em>It works!</em></p>
+    </section>
+
+    <section class="chapter-ideas">
+      <h3>Liberty BASIC</h3>
+      <p>Liberty BASIC is simple and friendly. Here is a whole program:</p>
+      <pre class="code-example">print "It works!"</pre>
+      <p>That&rsquo;s it! One line. The word <code>print</code> tells the computer to show something on the screen.</p>
+    </section>
+
+    <section class="chapter-ideas">
+      <h3>REALbasic</h3>
+      <p>REALbasic is a more advanced version of BASIC. It has a user interface (buttons, windows), so you write code that runs when the user clicks a button:</p>
+      <pre class="code-example">Sub Action()
+  MsgBox "It works!"
+End Sub</pre>
+      <p>When the user clicks the button, a message box pops up saying &ldquo;It works!&rdquo;</p>
+    </section>
+
+    <section class="chapter-ideas">
+      <h3>C++</h3>
+      <p>C++ is more complicated. Here is the same program in C++:</p>
+      <pre class="code-example">#include &lt;iostream&gt;
+#include &lt;stdio.h&gt;
+int main()
+{
+  std::cout &lt;&lt; "It works!\n";
+  std::cout &lt;&lt; "\nPress ENTER to continue..." &lt;&lt; std::endl;
+  getchar();
+  return 0;
+}</pre>
+      <p>That&rsquo;s a lot of lines just to say &ldquo;It works!&rdquo; C++ is powerful, but it makes easy things hard and hard things easy.</p>
+    </section>
+
+    <section class="chapter-ideas">
+      <h3>Revolution</h3>
+      <p>Revolution is a scripting language that uses English-like commands. Here is a program that runs when you click a button:</p>
+      <pre class="code-example">on mouseUp
+  put "It works!" into message
+end mouseUp</pre>
+      <p>The command <code>put ... into message</code> displays text in a message box.</p>
+    </section>
+
+    <section class="chapter-story">
+      <h3>Which One Should You Learn?</h3>
+      <p>It doesn&rsquo;t matter which language you start with. The important thing is to <strong>start</strong>. BASIC is easy and friendly. C++ is powerful. Revolution is simple and readable. Pick one, practice, and have fun!</p>
+    </section>
+
+    <section class="chapter-questions">
+      <h3>Think About It</h3>
+      <ol>
+        <li>Which language looked the easiest to you? Why?</li>
+        <li>What does the word <code>print</code> do in BASIC?</li>
+        <li>Can you write a program that prints your name instead of &ldquo;It works!&rdquo;?</li>
+      </ol>
+    </section>
+
+    <nav class="book-nav" aria-label="Chapter navigation">
+      <a href="#toc" class="nav-button">Table of Contents</a>
+      <a href="#chapter-6" class="nav-button">Next Chapter &rarr;</a>
+    </nav>
+  </article>
+
+  <!-- CHAPTER 6 -->
+  <article id="chapter-6" class="book-page chapter-page">
+    <header class="chapter-header">
+      <p class="chapter-part">Part Two: The Building Blocks</p>
+      <h2>Chapter 6: How a Program Is Built</h2>
+      <p class="chapter-tagline">Every program is made of three simple building blocks.</p>
+    </header>
+
+    <section class="chapter-story">
+      <p>Every program in the world &mdash; from a video game to a web browser &mdash; is built from three kinds of instructions: <strong>sequencing</strong>, <strong>branching</strong>, and <strong>looping</strong>.</p>
+    </section>
+
+    <section class="chapter-ideas">
+      <h3>1. Sequencing</h3>
+      <p>Sequencing means doing one thing after another, in order.</p>
+      <pre class="code-example">print "First, I wake up."
+print "Then, I brush my teeth."
+print "Then, I eat breakfast."</pre>
+      <p>The computer runs each line in order, top to bottom.</p>
+    </section>
+
+    <section class="chapter-ideas">
+      <h3>2. Branching</h3>
+      <p>Branching means making a choice. The computer asks a question and does different things depending on the answer.</p>
+      <pre class="code-example">IF it is raining THEN
+  print "Take an umbrella!"
+ELSE
+  print "Wear sunglasses!"
+END IF</pre>
+      <p>If it is raining, the computer says take an umbrella. If not, it says wear sunglasses.</p>
+    </section>
+
+    <section class="chapter-ideas">
+      <h3>3. Looping</h3>
+      <p>Looping means repeating something over and over.</p>
+      <pre class="code-example">FOR I = 1 TO 5
+  print "This is loop number "; I
+NEXT I</pre>
+      <p>This prints:</p>
+      <pre class="code-example">This is loop number 1
+This is loop number 2
+This is loop number 3
+This is loop number 4
+This is loop number 5</pre>
+    </section>
+
+    <section class="chapter-story">
+      <h3>Putting Them Together</h3>
+      <p>Here is a program that asks for a password and keeps asking until you type the right one. It uses sequencing, branching, and looping all together:</p>
+      <pre class="code-example">password$ = ""
+WHILE password$ <> "open"
+  PROMPT "Enter your password"; password$
+  IF password$ = "open" THEN
+    NOTICE "Welcome to the secret club!"
+  ELSE
+    NOTICE "Try again!"
+  END IF
+WEND
+END</pre>
+      <p>This program keeps asking (looping) until the password is correct, and it uses an IF-THEN statement (branching) to check the answer.</p>
+    </section>
+
+    <section class="chapter-questions">
+      <h3>Think About It</h3>
+      <ol>
+        <li>What is an example of sequencing in your morning routine?</li>
+        <li>Can you think of a time you used branching in real life?</li>
+        <li>What would you do if you had to loop something five times?</li>
+      </ol>
+    </section>
+
+    <nav class="book-nav" aria-label="Chapter navigation">
+      <a href="#toc" class="nav-button">Table of Contents</a>
+      <a href="#chapter-7" class="nav-button">Next Chapter &rarr;</a>
+    </nav>
+  </article>
+
+  <!-- CHAPTER 7 -->
+  <article id="chapter-7" class="book-page chapter-page">
+    <header class="chapter-header">
+      <p class="chapter-part">Part Two: The Building Blocks</p>
+      <h2>Chapter 7: Boxes, Labels, and Notes</h2>
+      <p class="chapter-tagline">How to store information, name it, and leave notes for yourself.</p>
+    </header>
+
+    <section class="chapter-story">
+      <p>Imagine you have a big pile of boxes. Each box has a label. Some boxes hold numbers. Some boxes hold words. You can put things in a box, take them out, and change what is inside.</p>
+      <p>In programming, these boxes are called <strong>variables</strong>.</p>
+    </section>
+
+    <section class="chapter-ideas">
+      <h3>Variables</h3>
+      <p>A variable is a named place in the computer&rsquo;s memory where you can store data.</p>
+      <pre class="code-example">name$ = "Ada"
+age = 11
+print "Hello, "; name$
+print "You are "; age; " years old."</pre>
+      <p>The variable <code>name$</code> holds a word (string), and the variable <code>age</code> holds a number.</p>
+      <p><strong>Rules for naming variables:</strong></p>
+      <ul>
+        <li>Use descriptive names like <code>firstName</code> or <code>totalPrice</code>.</li>
+        <li>Be consistent with upper- and lowercase letters. Some languages care about the difference between <code>Name</code> and <code>name</code>.</li>
+        <li>In some BASIC dialects, a string variable ends with a dollar sign (<code>$</code>).</li>
+      </ul>
+    </section>
+
+    <section class="chapter-ideas">
+      <h3>Constants</h3>
+      <p>A constant is like a variable, but its value never changes. You give it a name so the number makes sense.</p>
+      <pre class="code-example">Const INTEREST_RATE = 0.05
+balance = 1000
+profit = balance * INTEREST_RATE</pre>
+      <p>Instead of typing <code>0.05</code> everywhere, you use the name <code>INTEREST_RATE</code>. If the rate changes, you only have to change it in one place.</p>
+    </section>
+
+    <section class="chapter-ideas">
+      <h3>Comments</h3>
+      <p>Comments are notes for humans. The computer ignores them completely. They help you remember what your code does (and help other people understand it).</p>
+      <pre class="code-example">' This is a comment in Liberty BASIC
+REM This is also a comment
+// This is a comment in C++
+# This is a comment in Revolution</pre>
+      <p>Good comments explain <em>why</em> you did something, not just <em>what</em> you did.</p>
+    </section>
+
+    <section class="chapter-questions">
+      <h3>Think About It</h3>
+      <ol>
+        <li>What is the difference between a variable and a constant?</li>
+        <li>Why is it helpful to use descriptive variable names?</li>
+        <li>What kind of comment would you write next to a tricky piece of code?</li>
+      </ol>
+    </section>
+
+    <nav class="book-nav" aria-label="Chapter navigation">
+      <a href="#toc" class="nav-button">Table of Contents</a>
+      <a href="#chapter-8" class="nav-button">Next Chapter &rarr;</a>
+    </nav>
+  </article>
+
+  <!-- CHAPTER 8 -->
+  <article id="chapter-8" class="book-page chapter-page">
+    <header class="chapter-header">
+      <p class="chapter-part">Part Two: The Building Blocks</p>
+      <h2>Chapter 8: Numbers and Words</h2>
+      <p class="chapter-tagline">Computers love to crunch numbers and play with strings.</p>
+    </header>
+
+    <section class="chapter-story">
+      <p>Computers are great at two things: <strong>math</strong> and <strong>words</strong>. In programming, words are called <strong>strings</strong> because they are like a string of letters, symbols, and spaces.</p>
+    </section>
+
+    <section class="chapter-ideas">
+      <h3>Math Operators</h3>
+      <p>Here are the symbols you use to do math in code:</p>
+      <ul>
+        <li><code>+</code> addition (2 + 3 = 5)</li>
+        <li><code>-</code> subtraction (5 - 2 = 3)</li>
+        <li><code>*</code> multiplication (4 * 7 = 28)</li>
+        <li><code>/</code> division (10 / 2 = 5)</li>
+        <li><code>\</code> integer division (only whole numbers)</li>
+        <li><code>mod</code> modulo (the remainder after division)</li>
+        <li><code>^</code> exponentiation (2 ^ 3 = 8)</li>
+      </ul>
+    </section>
+
+    <section class="chapter-ideas">
+      <h3>Order of Operations</h3>
+      <p>Just like in math class, some operations happen before others. The computer calculates in this order:</p>
+      <ol>
+        <li>Exponentiation (<code>^</code>)</li>
+        <li>Multiplication (<code>*</code>) and division (<code>/</code>)</li>
+        <li>Integer division (<code>\</code>)</li>
+        <li>Modulo (<code>mod</code>)</li>
+        <li>Addition (<code>+</code>) and subtraction (<code>-</code>)</li>
+      </ol>
+      <p>If you want to change the order, use parentheses:</p>
+      <pre class="code-example">result = (3 + 4) ^ 5   ' This adds 3 + 4 first, then raises it to the 5th power
+result = 3 + 4 ^ 5      ' This raises 4 to the 5th power first, then adds 3</pre>
+    </section>
+
+    <section class="chapter-ideas">
+      <h3>Strings</h3>
+      <p>A string is anything inside quotation marks:</p>
+      <pre class="code-example">print "This is a string."
+print "So is this: 42"
+print "And this: 3.14159"</pre>
+      <p>You can <strong>concatenate</strong> (join) strings together:</p>
+      <pre class="code-example">firstName$ = "Ada"
+lastName$ = "Lovelace"
+fullName$ = firstName$ + " " + lastName$
+print fullName$   ' Prints "Ada Lovelace"</pre>
+    </section>
+
+    <section class="chapter-story">
+      <h3>Converting Between Numbers and Strings</h3>
+      <p>Sometimes you need to turn a number into a string, or a string into a number. Different languages have different commands for this. For example, in Liberty BASIC:</p>
+      <pre class="code-example">' Convert a string to a number
+age = VAL("42")    ' age is now the number 42
+
+' Convert a number to a string
+message$ = STR$(42)  ' message$ is now the string "42"</pre>
+      <p>In Revolution, the language figures it out automatically.</p>
+    </section>
+
+    <section class="chapter-questions">
+      <h3>Think About It</h3>
+      <ol>
+        <li>What is the result of <code>10 / 3</code>? What about <code>10 \ 3</code>?</li>
+        <li>What does the <code>mod</code> operator do?</li>
+        <li>Can you write a program that joins your first name and last name together?</li>
+      </ol>
+    </section>
+
+    <nav class="book-nav" aria-label="Chapter navigation">
+      <a href="#toc" class="nav-button">Table of Contents</a>
+      <a href="#chapter-9" class="nav-button">Next Chapter &rarr;</a>
+    </nav>
+  </article>
+
+  <!-- CHAPTER 9 -->
+  <article id="chapter-9" class="book-page chapter-page">
+    <header class="chapter-header">
+      <p class="chapter-part">Part Two: The Building Blocks</p>
+      <h2>Chapter 9: Making Choices</h2>
+      <p class="chapter-tagline">What if? Or else? The computer can decide.</p>
+    </header>
+
+    <section class="chapter-story">
+      <p>Computers can&rsquo;t think, but they can compare. They ask questions like: &ldquo;Is this number bigger than that one?&rdquo; &ldquo;Are these two words the same?&rdquo; The answer is always <strong>true</strong> or <strong>false</strong>.</p>
+      <p>These true-or-false questions are called <strong>Boolean expressions</strong>.</p>
+    </section>
+
+    <section class="chapter-ideas">
+      <h3>Relational Operators</h3>
+      <ul>
+        <li><code>&lt;</code> less than</li>
+        <li><code>&gt;</code> greater than</li>
+        <li><code>&lt;=</code> less than or equal to</li>
+        <li><code>&gt;=</code> greater than or equal to</li>
+        <li><code>=</code> equal to (in some languages, use <code>==</code>)</li>
+        <li><code>&lt;&gt;</code> not equal to</li>
+      </ul>
+    </section>
+
+    <section class="chapter-ideas">
+      <h3>IF-THEN Statements</h3>
+      <p>An IF-THEN statement runs some code only if a condition is true:</p>
+      <pre class="code-example">IF (age >= 18) THEN
+  print "You can vote!"
+END IF</pre>
+      <p>If <code>age</code> is 18 or more, the program prints the message. Otherwise, it does nothing.</p>
+    </section>
+
+    <section class="chapter-ideas">
+      <h3>IF-THEN-ELSE Statements</h3>
+      <p>An IF-THEN-ELSE statement gives the computer two choices:</p>
+      <pre class="code-example">IF (age >= 18) THEN
+  print "You can vote!"
+ELSE
+  print "You are too young to vote."
+END IF</pre>
+      <p>Now the program always does <em>something</em>, depending on the age.</p>
+    </section>
+
+    <section class="chapter-ideas">
+      <h3>SELECT CASE Statements</h3>
+      <p>When you have many possible values, a SELECT CASE statement is cleaner than a long list of IF-THENs:</p>
+      <pre class="code-example">SELECT CASE grade
+  CASE "A"
+    print "Excellent!"
+  CASE "B"
+    print "Good job!"
+  CASE "C"
+    print "You passed."
+  CASE ELSE
+    print "Better luck next time."
+END SELECT</pre>
+    </section>
+
+    <section class="chapter-ideas">
+      <h3>Boolean Operators</h3>
+      <p>You can combine conditions with AND and OR:</p>
+      <ul>
+        <li><strong>AND</strong> is true only if <em>both</em> sides are true.</li>
+        <li><strong>OR</strong> is true if <em>at least one</em> side is true.</li>
+      </ul>
+      <pre class="code-example">IF (age >= 13) AND (age <= 19) THEN
+  print "You are a teenager!"
+END IF</pre>
+    </section>
+
+    <section class="chapter-questions">
+      <h3>Think About It</h3>
+      <ol>
+        <li>What is the difference between <code>=</code> and <code>==</code> in some languages?</li>
+        <li>Can you write an IF-THEN-ELSE statement that checks if a number is positive or negative?</li>
+        <li>When would you use OR instead of AND?</li>
+      </ol>
+    </section>
+
+    <nav class="book-nav" aria-label="Chapter navigation">
+      <a href="#toc" class="nav-button">Table of Contents</a>
+      <a href="#chapter-10" class="nav-button">Next Chapter &rarr;</a>
+    </nav>
+  </article>
+
+  <!-- CHAPTER 10 -->
+  <article id="chapter-10" class="book-page chapter-page">
+    <header class="chapter-header">
+      <p class="chapter-part">Part Two: The Building Blocks</p>
+      <h2>Chapter 10: Repeating Things Over and Over</h2>
+      <p class="chapter-tagline">Why type the same thing a hundred times when you can loop?</p>
+    </header>
+
+    <section class="chapter-story">
+      <p>Imagine you have to print the numbers 1 through 1000. You could write 1000 print statements. But that would be silly. Instead, you use a <strong>loop</strong>.</p>
+      <p>A loop repeats instructions until a condition is met.</p>
+    </section>
+
+    <section class="chapter-ideas">
+      <h3>FOR-NEXT Loops</h3>
+      <p>A FOR-NEXT loop repeats a fixed number of times:</p>
+      <pre class="code-example">FOR I = 1 TO 5
+  print "The number is "; I
+NEXT I</pre>
+      <p>This prints the numbers 1 through 5. You can count by different numbers, count backwards, or count to a million.</p>
+    </section>
+
+    <section class="chapter-ideas">
+      <h3>WHILE Loops</h3>
+      <p>A WHILE loop repeats as long as a condition is true:</p>
+      <pre class="code-example">I = 0
+WHILE (I < 5)
+  print "I is "; I
+  I = I + 1
+WEND</pre>
+      <p>This does the same thing as the FOR-NEXT loop, but you control the condition yourself.</p>
+    </section>
+
+    <section class="chapter-ideas">
+      <h3>Endless Loops</h3>
+      <p>If a loop never stops, the program freezes. This is called an <strong>endless loop</strong>. The most common causes are:</p>
+      <ul>
+        <li>Forgetting to change the variable inside the loop.</li>
+        <li>Setting the variable inside the loop so it never reaches the exit condition.</li>
+      </ul>
+      <p>Always make sure your loop will eventually stop!</p>
+    </section>
+
+    <section class="chapter-questions">
+      <h3>Think About It</h3>
+      <ol>
+        <li>What is the difference between a FOR-NEXT loop and a WHILE loop?</li>
+        <li>Why is an endless loop bad?</li>
+        <li>Can you write a loop that counts from 10 down to 1?</li>
+      </ol>
+    </section>
+
+    <nav class="book-nav" aria-label="Chapter navigation">
+      <a href="#toc" class="nav-button">Table of Contents</a>
+      <a href="#chapter-11" class="nav-button">Next Chapter &rarr;</a>
+    </nav>
+  </article>
+
+  <!-- CHAPTER 11 -->
+  <article id="chapter-11" class="book-page chapter-page">
+    <header class="chapter-header">
+      <p class="chapter-part">Part Two: The Building Blocks</p>
+      <h2>Chapter 11: Little Programs Inside Big Programs</h2>
+      <p class="chapter-tagline">Divide and conquer!</p>
+    </header>
+
+    <section class="chapter-story">
+      <p>A big program can be hard to read. Imagine a book with no chapters, no paragraphs, no spaces &mdash; just one giant wall of text. That would be terrible!</p>
+      <p>Programmers break big programs into smaller pieces called <strong>subprograms</strong> (also called methods, functions, procedures, or handlers). Each subprogram does one job.</p>
+    </section>
+
+    <section class="chapter-ideas">
+      <h3>Why Use Subprograms?</h3>
+      <ul>
+        <li>They make big programs easier to read.</li>
+        <li>They let you reuse code instead of writing the same thing over and over.</li>
+        <li>They make it easier to fix bugs because you know exactly where to look.</li>
+      </ul>
+    </section>
+
+    <section class="chapter-ideas">
+      <h3>Creating Subprograms in Liberty BASIC</h3>
+      <pre class="code-example">GOSUB [sayHello]
+END
+
+[sayHello]
+  print "Hello!"
+  RETURN</pre>
+      <p>The <code>GOSUB</code> command jumps to the subprogram, and <code>RETURN</code> goes back to where it left off.</p>
+    </section>
+
+    <section class="chapter-ideas">
+      <h3>Functions: Subprograms That Return a Value</h3>
+      <p>A function is a special kind of subprogram that calculates something and gives you the answer.</p>
+      <pre class="code-example">print cube(3)
+
+FUNCTION cube(x)
+  cube = x * x * x
+END FUNCTION</pre>
+      <p>This prints 27 because 3 &times; 3 &times; 3 = 27.</p>
+    </section>
+
+    <section class="chapter-ideas">
+      <h3>Passing Parameters</h3>
+      <p>You can send data into a subprogram. The data is called a <strong>parameter</strong>.</p>
+      <pre class="code-example">CALL greet "Ada"
+
+SUB greet name$
+  print "Hello, "; name$; "!"
+END SUB</pre>
+      <p>This prints &ldquo;Hello, Ada!&rdquo; The subprogram accepted the name and used it.</p>
+    </section>
+
+    <section class="chapter-questions">
+      <h3>Think About It</h3>
+      <ol>
+        <li>What is a subprogram?</li>
+        <li>Why would you want to use a function instead of just writing the calculation every time?</li>
+        <li>Can you think of a task in your life that could be broken into smaller steps?</li>
+      </ol>
+    </section>
+
+    <nav class="book-nav" aria-label="Chapter navigation">
+      <a href="#toc" class="nav-button">Table of Contents</a>
+      <a href="#chapter-12" class="nav-button">Next Chapter &rarr;</a>
+    </nav>
+  </article>
+
+  <!-- CHAPTER 12 -->
+  <article id="chapter-12" class="book-page chapter-page">
+    <header class="chapter-header">
+      <p class="chapter-part">Part Two: The Building Blocks</p>
+      <h2>Chapter 12: Rows of Boxes</h2>
+      <p class="chapter-tagline">When one box isn&rsquo;t enough.</p>
+    </header>
+
+    <section class="chapter-story">
+      <p>Imagine you need to store the names of 30 students. You could make 30 separate variables: <code>name1</code>, <code>name2</code>, <code>name3</code>&hellip; but that would be exhausting.</p>
+      <p>Instead, you use an <strong>array</strong> &mdash; a row of boxes all with the same name, but each with a number.</p>
+    </section>
+
+    <section class="chapter-ideas">
+      <h3>Creating an Array</h3>
+      <p>In Liberty BASIC:</p>
+      <pre class="code-example">DIM names$(5)</pre>
+      <p>This creates an array called <code>names$</code> with 6 slots (numbered 0 through 5). Why 6? Because arrays start counting at 0!</p>
+      <p>In C++:</p>
+      <pre class="code-example">string names[5];</pre>
+    </section>
+
+    <section class="chapter-ideas">
+      <h3>Storing and Retrieving Data</h3>
+      <pre class="code-example">names$(0) = "Ada"
+names$(1) = "Grace"
+names$(2) = "Alan"
+print names$(0)   ' Prints "Ada"</pre>
+      <p>You use the array name plus a number in parentheses (or brackets in C++) to say which slot you want.</p>
+    </section>
+
+    <section class="chapter-ideas">
+      <h3>Loops and Arrays</h3>
+      <p>Loops and arrays are best friends. You can use a FOR-NEXT loop to fill an array or read from it:</p>
+      <pre class="code-example">FOR I = 0 TO 2
+  print names$(I)
+NEXT I</pre>
+    </section>
+
+    <section class="chapter-ideas">
+      <h3>Dynamic Arrays</h3>
+      <p>A dynamic array can grow or shrink while the program runs. In REALbasic, you can use commands like <code>Append</code>, <code>Insert</code>, and <code>Remove</code>. In C++, you use a pointer and the <code>new</code> keyword.</p>
+    </section>
+
+    <section class="chapter-ideas">
+      <h3>Two-Dimensional Arrays</h3>
+      <p>A two-dimensional array is like a grid or a table. You can store rows and columns of data.</p>
+      <pre class="code-example">DIM grid(2, 1)
+grid(0, 0) = "A"
+grid(0, 1) = "B"
+grid(1, 0) = "C"
+grid(1, 1) = "D"</pre>
+    </section>
+
+    <section class="chapter-questions">
+      <h3>Think About It</h3>
+      <ol>
+        <li>Why do arrays start at 0 in many languages?</li>
+        <li>What is the advantage of an array over many separate variables?</li>
+        <li>What kind of data could you store in a two-dimensional array?</li>
+      </ol>
+    </section>
+
+    <nav class="book-nav" aria-label="Chapter navigation">
+      <a href="#toc" class="nav-button">Table of Contents</a>
+      <a href="#chapter-13" class="nav-button">Next Chapter &rarr;</a>
+    </nav>
+  </article>
+
+  <!-- CHAPTER 13 -->
+  <article id="chapter-13" class="book-page chapter-page">
+    <header class="chapter-header">
+      <p class="chapter-part">Part Two: The Building Blocks</p>
+      <h2>Chapter 13: Building with Objects</h2>
+      <p class="chapter-tagline">Big programs are easier to build when you use Lego bricks.</p>
+    </header>
+
+    <section class="chapter-story">
+      <p>Imagine you are building a giant castle out of Lego bricks. Each brick is a separate piece, but together they make something amazing. Object-oriented programming (OOP) is like that &mdash; you build programs out of separate pieces called <strong>objects</strong>.</p>
+    </section>
+
+    <section class="chapter-ideas">
+      <h3>Encapsulation: Keeping Things Private</h3>
+      <p>An object bundles together data and the instructions that work on that data. It keeps them safe from other parts of the program.</p>
+      <p>Think of a TV remote. You can press buttons (the instructions), but you don&rsquo;t need to know how the inside works. The remote is an object.</p>
+    </section>
+
+    <section class="chapter-ideas">
+      <h3>Classes: Blueprints for Objects</h3>
+      <p>A class is a blueprint. An object is a thing built from that blueprint.</p>
+      <p>For example, a <code>Monster</code> class defines what a monster has (x and y coordinates) and what it can do (move, initialize). You can create many monsters from that one class.</p>
+      <pre class="code-example">class Monster {
+public:
+  int x;
+  int y;
+  void move(int dx, int dy);
+};</pre>
+    </section>
+
+    <section class="chapter-ideas">
+      <h3>Inheritance: Reusing Code</h3>
+      <p>Inheritance lets you create a new class based on an old one. The new class gets all the old class&rsquo;s features and can add its own.</p>
+      <p>For example, a <code>Person</code> class can inherit from <code>Monster</code> and add an <code>ammo</code> property and a <code>shoot</code> method.</p>
+    </section>
+
+    <section class="chapter-ideas">
+      <h3>Polymorphism: Same Name, Different Action</h3>
+      <p>Polymorphism lets two different objects use the same method name but do different things. It&rsquo;s like how a dog and a cat both have a <code>speak()</code> method, but one says &ldquo;Woof!&rdquo; and the other says &ldquo;Meow!&rdquo;</p>
+    </section>
+
+    <section class="chapter-questions">
+      <h3>Think About It</h3>
+      <ol>
+        <li>What is the difference between a class and an object?</li>
+        <li>Why is encapsulation useful?</li>
+        <li>Can you think of a real-world example of inheritance?</li>
+      </ol>
+    </section>
+
+    <nav class="book-nav" aria-label="Chapter navigation">
+      <a href="#toc" class="nav-button">Table of Contents</a>
+      <a href="#chapter-14" class="nav-button">Next Chapter &rarr;</a>
+    </nav>
+  </article>
+
+  <!-- ============================================================ -->
+  <!-- PART THREE                                                  -->
+  <!-- ============================================================ -->
+
+  <!-- CHAPTER 14 -->
+  <article id="chapter-14" class="book-page chapter-page">
+    <header class="chapter-header">
+      <p class="chapter-part">Part Three: Advanced Magic</p>
+      <h2>Chapter 14: Sorting and Searching</h2>
+      <p class="chapter-tagline">How do computers find things and put them in order?</p>
+    </header>
+
+    <section class="chapter-story">
+      <p>Imagine a library with 10,000 books, all piled randomly on the floor. If you wanted to find a specific book, it would take forever. But if the books were sorted alphabetically on shelves, you could find one in seconds.</p>
+      <p>Computers face the same problem. They need to <strong>sort</strong> data and <strong>search</strong> through it efficiently.</p>
+    </section>
+
+    <section class="chapter-ideas">
+      <h3>Sorting Algorithms</h3>
+      <p>There are many ways to sort data:</p>
+      <ul>
+        <li><strong>Insertion Sort:</strong> Like sorting playing cards in your hand. Pick up one card at a time and put it in the right place.</li>
+        <li><strong>Bubble Sort:</strong> Compare pairs of items and swap them if they are out of order. Repeat until everything is sorted.</li>
+        <li><strong>Shell Sort:</strong> Divide the list into smaller lists, sort those, then combine them.</li>
+        <li><strong>Quicksort:</strong> Pick a number, put smaller numbers on one side and larger numbers on the other, then repeat.</li>
+      </ul>
+    </section>
+
+    <section class="chapter-ideas">
+      <h3>Searching Algorithms</h3>
+      <ul>
+        <li><strong>Sequential Search:</strong> Look at every item one by one until you find what you want. Simple but slow for big lists.</li>
+        <li><strong>Binary Search:</strong> Cut the list in half, check the middle, and keep cutting until you find it. Much faster, but the list must be sorted first.</li>
+      </ul>
+    </section>
+
+    <section class="chapter-ideas">
+      <h3>Big-O Notation</h3>
+      <p>Computer scientists use something called <strong>Big-O notation</strong> to describe how fast an algorithm is. It looks at how the time grows as the list gets bigger.</p>
+      <p>For example, a sequential search is O(n) &mdash; if the list doubles, the search takes twice as long. A binary search is O(log n) &mdash; much faster for big lists.</p>
+    </section>
+
+    <section class="chapter-questions">
+      <h3>Think About It</h3>
+      <ol>
+        <li>Which sorting algorithm is easiest to understand?</li>
+        <li>Why is binary search faster than sequential search?</li>
+        <li>Can you think of a time you sorted something in real life?</li>
+      </ol>
+    </section>
+
+    <nav class="book-nav" aria-label="Chapter navigation">
+      <a href="#toc" class="nav-button">Table of Contents</a>
+      <a href="#chapter-15" class="nav-button">Next Chapter &rarr;</a>
+    </nav>
+  </article>
+
+  <!-- CHAPTER 15 -->
+  <article id="chapter-15" class="book-page chapter-page">
+    <header class="chapter-header">
+      <p class="chapter-part">Part Three: Advanced Magic</p>
+      <h2>Chapter 15: Finding and Fixing Bugs</h2>
+      <p class="chapter-tagline">Every program has bugs. The trick is finding them.</p>
+    </header>
+
+    <section class="chapter-story">
+      <p>No program is perfect. Even programs written by experts have bugs. The key is to find and fix them before they cause too much trouble.</p>
+    </section>
+
+    <section class="chapter-ideas">
+      <h3>Three Kinds of Bugs</h3>
+      <ul>
+        <li><strong>Syntax errors:</strong> You typed a command wrong. The computer can&rsquo;t understand it. Example: typing <code>prnt</code> instead of <code>print</code>.</li>
+        <li><strong>Run-time errors:</strong> Something unexpected happens while the program is running. Example: asking the user for a number and they type a word.</li>
+        <li><strong>Logic errors:</strong> The program runs, but it does the wrong thing. Example: a program that adds when it should subtract.</li>
+      </ul>
+    </section>
+
+    <section class="chapter-ideas">
+      <h3>Debugging Tools</h3>
+      <ul>
+        <li><strong>Stepping:</strong> Run the program one line at a time to see exactly what happens.</li>
+        <li><strong>Breakpoints:</strong> Tell the program to stop at a certain line so you can examine it.</li>
+        <li><strong>Watching:</strong> Keep an eye on a variable to see when it changes.</li>
+      </ul>
+    </section>
+
+    <section class="chapter-story">
+      <h3>Famous Bugs</h3>
+      <p>In 1962, a NASA rocket called Mariner 1 had to be destroyed because of a single typo in the code. A comma was typed as a period, which changed a loop into a wrong assignment. Millions of dollars lost!</p>
+      <p>The lesson: small bugs can cause big problems.</p>
+    </section>
+
+    <section class="chapter-questions">
+      <h3>Think About It</h3>
+      <ol>
+        <li>What is the difference between a syntax error and a logic error?</li>
+        <li>Why are logic errors the hardest to find?</li>
+        <li>What debugging tool would you use to watch a variable change?</li>
+      </ol>
+    </section>
+
+    <nav class="book-nav" aria-label="Chapter navigation">
+      <a href="#toc" class="nav-button">Table of Contents</a>
+      <a href="#chapter-16" class="nav-button">Next Chapter &rarr;</a>
+    </nav>
+  </article>
+
+  <!-- CHAPTER 16 -->
+  <article id="chapter-16" class="book-page chapter-page">
+    <header class="chapter-header">
+      <p class="chapter-part">Part Three: Advanced Magic</p>
+      <h2>Chapter 16: Making Programs Faster and Better</h2>
+      <p class="chapter-tagline">Optimization: the art of tuning up your code.</p>
+    </header>
+
+    <section class="chapter-story">
+      <p>A program that works is great. A program that works <em>and</em> runs fast is even better. Making a program faster is called <strong>optimization</strong>.</p>
+    </section>
+
+    <section class="chapter-ideas">
+      <h3>Choose the Right Data Structure</h3>
+      <p>If you need to store a list of items that can grow, use a dynamic array instead of a fixed-size array that might be too small or too large.</p>
+    </section>
+
+    <section class="chapter-ideas">
+      <h3>Choose the Right Algorithm</h3>
+      <p>Sorting 30,000 names with bubble sort is slow. Quicksort is much faster. Picking the right algorithm makes a huge difference.</p>
+    </section>
+
+    <section class="chapter-ideas">
+      <h3>Fine-Tune Your Code</h3>
+      <ul>
+        <li>Put conditions most likely to be false first in an AND expression.</li>
+        <li>Don&rsquo;t run a FOR-NEXT loop needlessly.</li>
+        <li>Don&rsquo;t put unnecessary instructions inside a loop.</li>
+        <li>Use the correct data types to save memory.</li>
+        <li>Use built-in commands when possible.</li>
+      </ul>
+    </section>
+
+    <section class="chapter-ideas">
+      <h3>Use a Faster Language or Compiler</h3>
+      <p>Machine code is fastest. Assembly language is next. C and C++ are faster than BASIC or Pascal. Different compilers can also produce faster or slower programs from the same code.</p>
+    </section>
+
+    <section class="chapter-questions">
+      <h3>Think About It</h3>
+      <ol>
+        <li>Why is optimization important?</li>
+        <li>What is one way to make a loop faster?</li>
+        <li>Why might you choose a slower language on purpose?</li>
+      </ol>
+    </section>
+
+    <nav class="book-nav" aria-label="Chapter navigation">
+      <a href="#toc" class="nav-button">Table of Contents</a>
+      <a href="#chapter-17" class="nav-button">Next Chapter &rarr;</a>
+    </nav>
+  </article>
+
+  <!-- CHAPTER 17 -->
+  <article id="chapter-17" class="book-page chapter-page">
+    <header class="chapter-header">
+      <p class="chapter-part">Part Three: Advanced Magic</p>
+      <h2>Chapter 17: Making Programs Easy to Use</h2>
+      <p class="chapter-tagline">The user interface is the face of your program.</p>
+    </header>
+
+    <section class="chapter-story">
+      <p>Imagine a beautiful restaurant with delicious food but a dirty front door and a confusing menu. You might not go in at all.</p>
+      <p>The same is true for programs. A great program with a bad user interface will be ignored.</p>
+    </section>
+
+    <section class="chapter-ideas">
+      <h3>Command-Line Interfaces</h3>
+      <p>The simplest interface is a command line, where the user types text commands. It&rsquo;s powerful, but it&rsquo;s not very friendly.</p>
+    </section>
+
+    <section class="chapter-ideas">
+      <h3>Graphical User Interfaces (GUIs)</h3>
+      <p>Most modern programs use GUIs with windows, buttons, menus, and icons. They are much easier for most people to use.</p>
+      <p>Common controls include:</p>
+      <ul>
+        <li><strong>Command buttons:</strong> Click to do something.</li>
+        <li><strong>Check boxes:</strong> Choose one or more options.</li>
+        <li><strong>Radio buttons:</strong> Choose exactly one option.</li>
+        <li><strong>List boxes and combo boxes:</strong> Pick from a list of choices.</li>
+        <li><strong>Text boxes:</strong> Type something.</li>
+        <li><strong>Labels:</strong> Display text that the user cannot change.</li>
+      </ul>
+    </section>
+
+    <section class="chapter-ideas">
+      <h3>Events</h3>
+      <p>When a user clicks a button or types in a text box, that&rsquo;s called an <strong>event</strong>. Your program listens for events and responds to them.</p>
+      <p>In REALbasic and Revolution, you can create event handlers by double-clicking a control and writing code.</p>
+    </section>
+
+    <section class="chapter-questions">
+      <h3>Think About It</h3>
+      <ol>
+        <li>What is the difference between a check box and a radio button?</li>
+        <li>Why is a GUI usually better than a command line for beginners?</li>
+        <li>What makes a user interface easy to use?</li>
+      </ol>
+    </section>
+
+    <nav class="book-nav" aria-label="Chapter navigation">
+      <a href="#toc" class="nav-button">Table of Contents</a>
+      <a href="#chapter-18" class="nav-button">Next Chapter &rarr;</a>
+    </nav>
+  </article>
+
+  <!-- ============================================================ -->
+  <!-- PART FOUR                                                   -->
+  <!-- ============================================================ -->
+
+  <!-- CHAPTER 18 -->
+  <article id="chapter-18" class="book-page chapter-page">
+    <header class="chapter-header">
+      <p class="chapter-part">Part Four: The Internet</p>
+      <h2>Chapter 18: Building Web Pages with HTML</h2>
+      <p class="chapter-tagline">The language of the web.</p>
+    </header>
+
+    <section class="chapter-story">
+      <p>Every web page you have ever visited is built with a language called <strong>HTML</strong> &mdash; HyperText Markup Language. It&rsquo;s not really a programming language. It&rsquo;s a way of describing how content should look.</p>
+    </section>
+
+    <section class="chapter-ideas">
+      <h3>Tags</h3>
+      <p>HTML uses <strong>tags</strong> written in angle brackets. Most tags come in pairs: an opening tag and a closing tag.</p>
+      <pre class="code-example">&lt;h1&gt;This is a heading&lt;/h1&gt;
+&lt;p&gt;This is a paragraph.&lt;/p&gt;
+&lt;b&gt;This is bold text.&lt;/b&gt;
+&lt;i&gt;This is italic text.&lt;/i&gt;</pre>
+    </section>
+
+    <section class="chapter-ideas">
+      <h3>The Structure of a Web Page</h3>
+      <pre class="code-example">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;My Awesome Page&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Welcome!&lt;/h1&gt;
+    &lt;p&gt;This is my first web page.&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</pre>
+      <p>The <code>&lt;title&gt;</code> appears in the browser tab. Everything inside <code>&lt;body&gt;</code> appears on the page.</p>
+    </section>
+
+    <section class="chapter-ideas">
+      <h3>Lists and Links</h3>
+      <pre class="code-example">&lt;ul&gt;
+  &lt;li&gt;First item&lt;/li&gt;
+  &lt;li&gt;Second item&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;a href="https://www.example.com"&gt;Click here!&lt;/a&gt;</pre>
+      <p><code>&lt;ul&gt;</code> makes a bulleted list. <code>&lt;a&gt;</code> makes a link.</p>
+    </section>
+
+    <section class="chapter-ideas">
+      <h3>Images</h3>
+      <pre class="code-example">&lt;img src="my-picture.jpg" alt="A picture of my cat"&gt;</pre>
+      <p>The <code>src</code> attribute tells the browser where to find the image.</p>
+    </section>
+
+    <section class="chapter-ideas">
+      <h3>Forms</h3>
+      <p>Forms let users type information and submit it. They can include text boxes, buttons, check boxes, and radio buttons.</p>
+      <pre class="code-example">&lt;form&gt;
+  &lt;label&gt;Your name: &lt;input type="text" name="name"&gt;&lt;/label&gt;
+  &lt;input type="submit" value="Send"&gt;
+&lt;/form&gt;</pre>
+    </section>
+
+    <section class="chapter-questions">
+      <h3>Think About It</h3>
+      <ol>
+        <li>What is the difference between <code>&lt;b&gt;</code> and <code>&lt;i&gt;</code>?</li>
+        <li>What does the <code>&lt;title&gt;</code> tag do?</li>
+        <li>Can you make a list of your favorite foods in HTML?</li>
+      </ol>
+    </section>
+
+    <nav class="book-nav" aria-label="Chapter navigation">
+      <a href="#toc" class="nav-button">Table of Contents</a>
+      <a href="#chapter-19" class="nav-button">Next Chapter &rarr;</a>
+    </nav>
+  </article>
+
+  <!-- CHAPTER 19 -->
+  <article id="chapter-19" class="book-page chapter-page">
+    <header class="chapter-header">
+      <p class="chapter-part">Part Four: The Internet</p>
+      <h2>Chapter 19: Making Web Pages Come Alive with JavaScript</h2>
+      <p class="chapter-tagline">Add interactivity to your web pages.</p>
+    </header>
+
+    <section class="chapter-story">
+      <p>HTML makes pretty web pages, but they just sit there. JavaScript makes them <strong>interactive</strong> &mdash; you can click buttons, play games, and respond to the user.</p>
+    </section>
+
+    <section class="chapter-ideas">
+      <h3>Adding JavaScript to a Page</h3>
+      <pre class="code-example">&lt;script&gt;
+  alert("Hello, world!");
+&lt;/script&gt;</pre>
+      <p>This pops up an alert box when the page loads.</p>
+    </section>
+
+    <section class="chapter-ideas">
+      <h3>Variables in JavaScript</h3>
+      <pre class="code-example">var name = "Ada";
+var age = 11;
+document.write("Hello, " + name + "!");</pre>
+      <p>JavaScript uses <code>var</code> to create variables. The <code>document.write</code> command prints text to the page.</p>
+    </section>
+
+    <section class="chapter-ideas">
+      <h3>Dialog Boxes</h3>
+      <pre class="code-example">alert("This is an alert!");
+var answer = confirm("Do you want to continue?");
+var name = prompt("What is your name?", "Type here");</pre>
+      <p>JavaScript has three kinds of dialog boxes: alert, confirm, and prompt.</p>
+    </section>
+
+    <section class="chapter-ideas">
+      <h3>Functions</h3>
+      <pre class="code-example">function square(x) {
+  return x * x;
+}
+document.write(square(5));  // Prints 25</pre>
+      <p>Functions let you reuse code and keep your program organized.</p>
+    </section>
+
+    <section class="chapter-ideas">
+      <h3>Opening and Closing Windows</h3>
+      <pre class="code-example">var myWindow = window.open("page.html", "myWindow", "width=400,height=300");
+myWindow.close();</pre>
+      <p>You can open new browser windows and control their appearance.</p>
+    </section>
+
+    <section class="chapter-questions">
+      <h3>Think About It</h3>
+      <ol>
+        <li>What is the difference between HTML and JavaScript?</li>
+        <li>What does the <code>alert()</code> function do?</li>
+        <li>Can you write a function that adds two numbers and returns the result?</li>
+      </ol>
+    </section>
+
+    <nav class="book-nav" aria-label="Chapter navigation">
+      <a href="#toc" class="nav-button">Table of Contents</a>
+      <a href="#chapter-20" class="nav-button">Next Chapter &rarr;</a>
+    </nav>
+  </article>
+
+  <!-- CHAPTER 20 -->
+  <article id="chapter-20" class="book-page chapter-page">
+    <header class="chapter-header">
+      <p class="chapter-part">Part Four: The Internet</p>
+      <h2>Chapter 20: Java Applets &mdash; Mini Programs for the Web</h2>
+      <p class="chapter-tagline">Small but powerful programs that run in your browser.</p>
+    </header>
+
+    <section class="chapter-story">
+      <p>Java is a powerful programming language that can create two kinds of programs: full applications and <strong>applets</strong> &mdash; tiny programs that run inside a web browser.</p>
+    </section>
+
+    <section class="chapter-ideas">
+      <h3>How Java Applets Work</h3>
+      <p>Java code is compiled into <strong>byte code</strong> (files ending in <code>.class</code>). The byte code runs on a <strong>Java Virtual Machine (JVM)</strong>, which translates it into machine language for whatever computer you are using.</p>
+      <p>This means the same Java applet can run on Windows, Mac, or Linux &mdash; as long as the computer has a JVM.</p>
+    </section>
+
+    <section class="chapter-ideas">
+      <h3>Adding an Applet to a Web Page</h3>
+      <pre class="code-example">&lt;applet code="MyApplet.class" width="300" height="200"&gt;
+  Your browser does not support Java.
+&lt;/applet&gt;</pre>
+      <p>The <code>width</code> and <code>height</code> attributes define the size of the applet window.</p>
+    </section>
+
+    <section class="chapter-ideas">
+      <h3>Aligning and Spacing</h3>
+      <p>You can use <code>align</code> to position text around the applet, and <code>hspace</code> and <code>vspace</code> to add space between the applet and the text.</p>
+      <pre class="code-example">&lt;applet code="MyApplet.class" width="250" height="150" align="middle" hspace="20" vspace="10"&gt;
+&lt;/applet&gt;</pre>
+    </section>
+
+    <section class="chapter-questions">
+      <h3>Think About It</h3>
+      <ol>
+        <li>What is the difference between a Java application and a Java applet?</li>
+        <li>Why do you need a Java Virtual Machine to run Java programs?</li>
+        <li>What are some things you could do with a Java applet on a web page?</li>
+      </ol>
+    </section>
+
+    <nav class="book-nav" aria-label="Chapter navigation">
+      <a href="#toc" class="nav-button">Table of Contents</a>
+      <a href="#chapter-21" class="nav-button">Next Chapter &rarr;</a>
+    </nav>
+  </article>
+
+  <!-- ============================================================ -->
+  <!-- PART FIVE                                                   -->
+  <!-- ============================================================ -->
+
+  <!-- CHAPTER 21 -->
+  <article id="chapter-21" class="book-page chapter-page">
+    <header class="chapter-header">
+      <p class="chapter-part">Part Five: The Part of Tens</p>
+      <h2>Chapter 21: Ten More Places to Learn and Play</h2>
+      <p class="chapter-tagline">Keep the adventure going!</p>
+    </header>
+
+    <section class="chapter-story">
+      <p>Learning to program is a journey. Here are some fun places to continue your adventure.</p>
+    </section>
+
+    <section class="chapter-ideas">
+      <h3>Learn More Languages</h3>
+      <ul>
+        <li><strong>Python:</strong> Friendly and popular for science and games.</li>
+        <li><strong>Scratch:</strong> A visual language where you snap blocks together.</li>
+        <li><strong>Lego Mindstorms:</strong> Build and program real robots.</li>
+        <li><strong>Alice:</strong> A 3D programming environment for beginners.</li>
+        <li><strong>Kid&rsquo;s Programming Language:</strong> Designed for young learners.</li>
+      </ul>
+    </section>
+
+    <section class="chapter-ideas">
+      <h3>Join a Community</h3>
+      <ul>
+        <li>Look for a local coding club or user group.</li>
+        <li>Visit online forums and ask questions.</li>
+        <li>Participate in an open-source project when you are ready.</li>
+      </ul>
+    </section>
+
+    <section class="chapter-ideas">
+      <h3>Play Programming Games</h3>
+      <ul>
+        <li><strong>Core Wars:</strong> Write a program that fights other programs in a simulated computer memory.</li>
+        <li><strong>Battling Robots:</strong> Program a robot to survive in an arena.</li>
+        <li><strong>CodeCombat:</strong> Learn programming by playing a game.</li>
+        <li><strong>Lightbot:</strong> A puzzle game about programming logic.</li>
+      </ul>
+    </section>
+
+    <section class="chapter-questions">
+      <h3>Think About It</h3>
+      <ol>
+        <li>Which of these resources sounds most fun to you?</li>
+        <li>What is one thing you would like to build with code?</li>
+        <li>Who could you ask to learn programming with you?</li>
+      </ol>
+    </section>
+
+    <nav class="book-nav" aria-label="Chapter navigation">
+      <a href="#toc" class="nav-button">Table of Contents</a>
+      <a href="#chapter-22" class="nav-button">Next Chapter &rarr;</a>
+    </nav>
+  </article>
+
+  <!-- CHAPTER 22 -->
+  <article id="chapter-22" class="book-page chapter-page">
+    <header class="chapter-header">
+      <p class="chapter-part">Part Five: The Part of Tens</p>
+      <h2>Chapter 22: Ten Cool Jobs for People Who Love Code</h2>
+      <p class="chapter-tagline">You could get paid to do this!</p>
+    </header>
+
+    <section class="chapter-story">
+      <p>Once you know how to program, you can do all kinds of amazing things. Here are some jobs that use programming skills.</p>
+    </section>
+
+    <section class="chapter-ideas">
+      <h3>Game Programmer</h3>
+      <p>Design and build video games. You could work on graphics, game logic, or testing.</p>
+    </section>
+
+    <section class="chapter-ideas">
+      <h3>Computer Animator</h3>
+      <p>Create animated movies and special effects using code and graphics tools.</p>
+    </section>
+
+    <section class="chapter-ideas">
+      <h3>Encryption Specialist</h3>
+      <p>Keep information safe by creating and breaking secret codes. You need strong math skills.</p>
+    </section>
+
+    <section class="chapter-ideas">
+      <h3>Internet Programmer</h3>
+      <p>Build websites and web applications that millions of people use.</p>
+    </section>
+
+    <section class="chapter-ideas">
+      <h3>Security Expert</h3>
+      <p>Help protect computers from viruses and hackers. Sometimes called &ldquo;ethical hacking.&rdquo;</p>
+    </section>
+
+    <section class="chapter-ideas">
+      <h3>Open-Source Contributor</h3>
+      <p>Contribute to free software projects like Linux or Firefox. It&rsquo;s a great way to learn and get noticed.</p>
+    </section>
+
+    <section class="chapter-ideas">
+      <h3>Niche Programmer</h3>
+      <p>Combine programming with another passion &mdash; like medicine, music, or sports &mdash; to create specialized software.</p>
+    </section>
+
+    <section class="chapter-ideas">
+      <h3>Teacher</h3>
+      <p>Teach others how to program. You could work in schools, online, or at coding bootcamps.</p>
+    </section>
+
+    <section class="chapter-ideas">
+      <h3>Indie Software Developer</h3>
+      <p>Create and sell your own software. You could make apps, games, or tools that people love.</p>
+    </section>
+
+    <section class="chapter-ideas">
+      <h3>Robotics Engineer</h3>
+      <p>Program robots that explore space, help in hospitals, or work in factories.</p>
+    </section>
+
+    <section class="chapter-questions">
+      <h3>Think About It</h3>
+      <ol>
+        <li>Which job sounds most exciting to you?</li>
+        <li>What kind of program would you like to create and sell?</li>
+        <li>What other field could you combine with programming?</li>
+      </ol>
+    </section>
+
+    <nav class="book-nav" aria-label="Chapter navigation">
+      <a href="#toc" class="nav-button">Table of Contents</a>
+      <a href="#book-cover" class="nav-button">Back to Cover</a>
+    </nav>
+  </article>
+
+  <!-- ============================================================ -->
+  <!-- APPENDIX / GLOSSARY                                          -->
+  <!-- ============================================================ -->
+  <article id="glossary" class="book-page appendix-page">
+    <header class="chapter-header">
+      <p class="chapter-part">Appendix</p>
+      <h2>Glossary of Useful Terms</h2>
+      <p class="chapter-tagline">A quick reference for young coders.</p>
+    </header>
+
+    <section class="chapter-ideas">
+      <dl class="glossary-list">
+        <dt>Algorithm</dt>
+        <dd>A step-by-step way to solve a problem.</dd>
+
+        <dt>Array</dt>
+        <dd>A row of boxes that all hold the same kind of data, each with a number.</dd>
+
+        <dt>Bug</dt>
+        <dd>A mistake in a program.</dd>
+
+        <dt>Byte code</dt>
+        <dd>An in-between language that Java programs are compiled into.</dd>
+
+        <dt>Class</dt>
+        <dd>A blueprint for making objects.</dd>
+
+        <dt>Compiler</dt>
+        <dd>A program that translates code into machine language all at once.</dd>
+
+        <dt>Constant</dt>
+        <dd>A named value that never changes.</dd>
+
+        <dt>Debugger</dt>
+        <dd>A tool for finding and fixing bugs.</dd>
+
+        <dt>Function</dt>
+        <dd>A subprogram that calculates and returns a value.</dd>
+
+        <dt>Integer</dt>
+        <dd>A whole number (no decimals).</dd>
+
+        <dt>Interpreter</dt>
+        <dd>A program that translates and runs code one line at a time.</dd>
+
+        <dt>Loop</dt>
+        <dd>Instructions that repeat.</dd>
+
+        <dt>Machine language</dt>
+        <dd>The 0s and 1s that computers understand directly.</dd>
+
+        <dt>Object</dt>
+        <dd>A bundle of data and instructions built from a class.</dd>
+
+        <dt>Parameter</dt>
+        <dd>Data that you pass into a subprogram.</dd>
+
+        <dt>Pseudocode</dt>
+        <dd>Plain-English instructions that describe what a program should do.</dd>
+
+        <dt>String</dt>
+        <dd>Text inside quotation marks.</dd>
+
+        <dt>Subprogram</dt>
+        <dd>A small program inside a bigger program.</dd>
+
+        <dt>Variable</dt>
+        <dd>A named box that holds data.</dd>
+      </dl>
+    </section>
+
+    <nav class="book-nav" aria-label="Chapter navigation">
+      <a href="#toc" class="nav-button">Table of Contents</a>
+      <a href="#book-cover" class="nav-button">Back to Cover</a>
+    </nav>
+  </article>
+
+  <!-- ============================================================ -->
+  <!-- BACK COVER                                                  -->
+  <!-- ============================================================ -->
+  <footer id="back-cover" class="book-page cover-page back-cover">
+    <div class="cover-content">
+      <h2>The End&hellip; Or Just the Beginning?</h2>
+      <p>You have learned how computers think, how programs are built, and how to write code in several languages.</p>
+      <p>But this is only the start of your adventure. The best way to learn programming is to <strong>keep programming</strong>.</p>
+      <p>Build something. Break something. Fix it. Try again.</p>
+      <p class="closing-line">Happy coding!</p>
+    </div>
+    <nav class="book-nav" aria-label="Book navigation">
+      <a href="#toc" class="nav-button">Table of Contents</a>
+      <a href="#book-cover" class="nav-button">Back to Cover</a>
+    </nav>
+  </footer>
+ <script src="script.js"></script>
+</body>
+</html>
