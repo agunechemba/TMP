@@ -520,3 +520,36 @@ body.js-ready .page-hint.hidden { opacity: 0; }
     scroll-behavior: auto !important;
   }
 }
+
+
+
+
+
+
+
+.cover-credit {
+  margin: 28px auto 0;
+  padding-top: 18px;
+  font-family: var(--font-sans);
+  font-size: .82rem;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: rgba(251, 246, 236, .65);
+  border-top: 1px solid rgba(212, 169, 78, .35);
+  max-width: 300px;
+}
+
+.cover-credit a {
+  color: var(--gold);
+  text-decoration: none;
+  font-weight: 700;
+  border-bottom: 1px dotted rgba(212, 169, 78, .6);
+  transition: color .2s, border-color .2s;
+}
+
+.cover-credit a:hover,
+.cover-credit a:focus-visible {
+  color: #e8bd62;
+  border-bottom-color: #e8bd62;
+  outline: none;
+}
