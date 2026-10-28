@@ -15,8 +15,6 @@ It covers the full journey — from what a program actually is, through variable
 - 🧠 Every concept is explained through a story or everyday analogy
 - 💻 Real code examples so it isn't just theory
 
-**Read it free here → [https://agunechemba.name.ng/TMP/](https://agunechemba.name.ng/TMP/)**
-
 *No signup. No download. Just open the cover and start turning pages.*
 
 ---
